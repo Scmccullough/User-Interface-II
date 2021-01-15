@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 /* Add CSS styling here */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -52,14 +54,13 @@ table {
 
 
 
-
 html{
 	/* background:url(https://a-static.besthdwallpaper.com/attack-on-titan-colossal-titan-wallpaper-1366x768-18733_46.jpg);
 	box-sizing:border-box;
 	background-position:center;
 	background-size:100% 100%; */
-	border: 2px solid salmon;
-    margin: 1%;
+	background:black;
+    margin: 3%;
     height: 200vh;
 }
 body{
@@ -68,8 +69,11 @@ body{
 	flex-direction:column;
 	border:1px solid black;
 	height:100%;
+	font-family: 'Syne Mono', monospace;
+	color:white;
 }
 .intro{
+	background:#14213d;
 	display:flex;
 	width:100%;
 	height:40vh;
@@ -77,29 +81,44 @@ body{
 	justify-content:center;
 	align-items:center;
 	justify-content:space-evenly
-
+}
+.intro p{
+	width:85%;
+	height:20%;
+	font-size:14px;
+}
+h1{
+	font-family: 'Bungee Inline', cursive;
+	font-size: 4rem;
+	text-shadow:2px 2px rgb(250, 248, 248);
+	color:#ff9d00;
+}
+h2{
+	font-size:2rem;
 }
 .homenav {
 	display:flex;
-	border: 1px solid black;
-	width:20%;
+	/* border: 1px solid black; */
+	width:25%;
 	justify-content:space-evenly;
 }
-a{
-	border:2px solid black;
+a.navlink{
+	border:2px solid white;
 	padding:12px;
-	color: black;
+	color:white;
 	border-radius:8px;
 	text-decoration:none;
 	transition:0.3s;
-
+	font-size:1.2rem;
+	transform:scale(1,1);
 }
-a:hover{
-	background:black;
+a.navlink:hover{
+	background: #ff9d00;
 	color:white;
+	transform:scale(1.1,1.1);
 }
 section{
-	border:1px solid black;
+	/* border:1px solid black; */
 	display:flex;
 	flex-direction:row;
 	justify-content:space-evenly;
@@ -109,7 +128,17 @@ section{
 	display:flex;
 	height:40%;
 }
+.neyland{
+	background:url(https://cutewallpaper.org/21/university-of-tennessee-football-wallpaper/Big-Orange-Tix-The-University-of-Tennessee,-Knoxville.jpg);
+	background-size:100%;
+	background-position:center;
+	width:100%;
+	box-sizing:border-box;
+
+}
 .box3{
+	background: #ff9d00;
+	/* border:1px solid black; */
 	display: flex;
 	flex-direction:row;
 	height:50%;
@@ -121,20 +150,21 @@ section{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-evenly;
-	border:1px solid black;
+	/* border:1px solid black; */
 	border-radius:10px;
 	height:90%;
 	width:15%;
 }
 .aboutprojects{
 	display:flex;
-	border:1px solid black;
+	/* border:1px solid black; */
 	height:80%;
 	width:20%;
 	align-items:center;
 	justify-content: center;
 }
 .homefooter{
+	background:#14213d;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -143,7 +173,42 @@ section{
 	width:100%;
 	height:12%;
 }
+.homefooter p{
+	font-size:1.8rem;
+}
 .image{
+	background:url(https://picsum.photos/150);
+	background-position:center;
+	box-sizing:border-box;
+	background-size:100%;
+	display:flex;
 	border:1px solid black;
+	border-radius:10px;
+	justify-content:center;
+	align-items:center;
+	height:25%;
+	widows: 100px;%;
+	transition:0.3s;
+}
+.image:hover{
+	transform:scale(1.1,1.1);
+}
+a.pjlink{
+	padding:30% 36% 30% 36%;
+	opacity:0;
+	transition:0.3s;
+	text-decoration:none;
+}
+a.pjlink:hover{
+	opacity:1;
+	transform:scale(1.5,1.5);
+	color:white;
+
+}
+.aboutprojects p{
+	font-size:1.5rem;
+	/* border: 1px solid black; */
+	width:100%;
+	height:40%;
 
 }
