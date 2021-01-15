@@ -110,7 +110,6 @@ a.navlink{
 	text-decoration:none;
 	transition:0.3s;
 	font-size:1.2rem;
-	transform:scale(1,1);
 }
 a.navlink:hover{
 	background: #ff9d00;
