@@ -212,3 +212,13 @@ a.pjlink:hover{
 	height:40%;
 
 }
+.socialmedia a{
+	color:white;
+	border:1px solid white;
+	padding:5px;
+	border-radius:6px;
+	transition:0.3s;
+}
+.socialmedia a:hover{
+	background: #ff9d00;
+}
